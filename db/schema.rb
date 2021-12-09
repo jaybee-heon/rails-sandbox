@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_12_09_184820) do
   end
 
   create_table "users", charset: "utf8mb4", force: :cascade do |t|
-    t.string "name", limit: 20
+    t.string "name", null: false
     t.string "email", null: false
     t.bigint "status_id"
     t.datetime "created_at", precision: 6, null: false
