@@ -1,0 +1,10 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+AllCops:
+  NewCops: enable
+  Exclude:
+    - config/**/*
+    - bin/**/*
+    - db/**/*
+    - Gemfile
+    - Gemfile.lock
